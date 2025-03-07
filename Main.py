@@ -76,7 +76,7 @@ if an == 1:
     Targets = np.concatenate((normal_tar, abnormal_tar), axis=0)
     Targets = Targets.reshape(-1, 1)
     np.save('Data_1.npy', Datas)
-    np.save('Targets_1.npy', Targets)
+    np.save('Target_1.npy', Targets)
 
 
 # Read the dataset 2
@@ -104,7 +104,7 @@ if an == 1:
     Tar_encoded = label_encoder.fit_transform(Target)
     Targets = to_categorical(Tar_encoded).astype('int')
     np.save('Data_2.npy', Datas)
-    np.save('Targets_2.npy', Targets)
+    np.save('Target_2.npy', Targets)
 
 
 # Read the dataset 3
@@ -120,7 +120,7 @@ if an == 1:
     Tar_encoded = label_encoder.fit_transform(Tar)
     Targets = to_categorical(Tar_encoded).astype('int')
     np.save('Data_3.npy', Datas)
-    np.save('Targets_3.npy', Targets)
+    np.save('Target_3.npy', Targets)
 
 
 # Read the dataset 4
@@ -132,7 +132,7 @@ if an == 1:
     Datas = df[:, :-1]
     Targets = ((df[:, -1]).astype('int')).reshape(-1, 1)
     np.save('Data_4.npy', Datas)
-    np.save('Targets_4.npy', Targets)
+    np.save('Target_4.npy', Targets)
 
 
 # Read the feature set 3 for Datasets 1
@@ -236,7 +236,7 @@ if an == 1:
         Feat_1 = np.load('Feature_1_' + str(n + 1) + '.npy', allow_pickle=True)
         Feat_2 = np.load('Feature_2_' + str(n + 1) + '.npy', allow_pickle=True)
         Feat_3 = np.load('Feature_3_' + str(n + 1) + '.npy', allow_pickle=True)  # Load the Selected features
-        Target = np.load('Targets_' + str(n + 1) + '.npy', allow_pickle=True)  # Load the Target
+        Target = np.load('Target_' + str(n + 1) + '.npy', allow_pickle=True)  # Load the Target
         Feat = np.concatenate((Feat_1, Feat_2, Feat_3), axis=1)
         Global_Vars.Feat_1 = Feat_1
         Global_Vars.Feat_2 = Feat_2
@@ -303,7 +303,7 @@ if an == 1:
     Eval_All = []
     for n in range(no_of_Dataset):
         Feat = np.load('Weighted_Fused_Feature_' + str(n + 1) + '.npy', allow_pickle=True)  # Load the Feature_1
-        Target = np.load('Targets_' + str(n + 1) + '.npy', allow_pickle=True)  # Load the Target
+        Target = np.load('Target_' + str(n + 1) + '.npy', allow_pickle=True)  # Load the Target
         EVAL = []
         Batch_Size = [4, 16, 32, 64, 128]
         for BS in range(len(Batch_Size)):
