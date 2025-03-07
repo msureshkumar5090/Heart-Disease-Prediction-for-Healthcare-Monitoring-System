@@ -1,0 +1,13 @@
+
+Dataset links
+* https: // www.kaggle.com / datasets / shayanfazeli / heartbeat
+* https: // data.mendeley.com / datasets / z68kh9x52x / 1
+* https: // www.kaggle.com / datasets / akki2703 / ecg - of - cardiac - ailments - dataset
+* https://www.kaggle.com/datasets/devavratatripathy/ecg-dataset
+
+Feature set 3 for all the datasets links
+* https: // www.kaggle.com / datasets / johnsmith88 / heart - disease - dataset (Feature Set 3 for Dataset 1)
+* https: // archive.ics.uci.edu / ml / datasets / heart + disease (Feature Set 3 for Dataset 2)
+* https: // www.kaggle.com / datasets / redwankarimsony / heart - disease - data (Feature Set 3 for Dataset 3)
+* https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction (Feature Set 3 for Dataset 4)
+
